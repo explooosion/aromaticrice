@@ -12,7 +12,7 @@
     margin: 0 auto;
     width: 100%;
     height: 20px;
-    background-image: url('@/images/Background_Shadow.png');
+    background-image: url('/public/Background_Shadow.png');
     background-size: 1917px 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@
       right: -25%;
       height: 1182px;
       width: 935px;
-      background-image: url('@/images/Key Visual_illustration.png');
+      background-image: url('/public/Key Visual_illustration.png');
       background-size: 100%;
       background-repeat: no-repeat;
     }

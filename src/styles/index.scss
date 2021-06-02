@@ -1,31 +1,30 @@
 /* Reset */
-@import './reset/h';
-@import './reset/p';
-@import './reset/ul';
+@import "./reset/h";
+@import "./reset/p";
+@import "./reset/ul";
 
 /* Fonts */
-@import './fonts/Sackers Gothic';
+@import "./fonts/Sackers Gothic";
 // @import './fonts/PingFang';
 
 /* Models */
-@import './models/color';
-@import './models/config';
-@import './models/screen';
-@import './models/font';
+@import "./models/color";
+@import "./models/screen";
+@import "./models/font";
 
 /* Components */
-@import './components/layout';
-@import './components/text';
-@import './components/typography';
+@import "./components/layout";
+@import "./components/text";
+@import "./components/typography";
 
 /* Containers */
-@import './containers/footer';
-@import './containers/gotop';
-@import './containers/header';
-@import './containers/section1';
-@import './containers/section2';
-@import './containers/section3';
-@import './containers/section4';
+@import "./containers/footer";
+@import "./containers/gotop";
+@import "./containers/header";
+@import "./containers/section1";
+@import "./containers/section2";
+@import "./containers/section3";
+@import "./containers/section4";
 
 * {
   box-sizing: border-box;

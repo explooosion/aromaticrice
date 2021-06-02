@@ -3,13 +3,13 @@
   margin: 0 auto;
   width: 100%;
   height: 1054px;
-  background-image: url('@/images/Key Visual.png');
+  background-image: url("/public/Key Visual.png");
   background-size: 1920px 1054px;
   background-repeat: no-repeat;
   background-position: center;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -15px;
     left: 0;
@@ -17,7 +17,7 @@
     margin: 0 auto;
     width: 100%;
     height: 20px;
-    background-image: url('@/images/Background_Shadow.png');
+    background-image: url("/public/Background_Shadow.png");
     background-size: 1917px 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +44,7 @@
   //     // max-width: 1920px;
   //     width: 100%;
   //     height: 20px;
-  //     background-image: url('@/images/Background_Shadow.png');
+  //     background-image: url('/public/Background_Shadow.png');
   //     background-size: 11917px 20px;
   //     background-repeat: no-repeat;
   //     background-position: center;
