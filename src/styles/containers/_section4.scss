@@ -13,12 +13,12 @@
       width: 498px;
 
       &::before {
-        content: '';
+        content: "";
         width: 498px;
         height: 1043px;
         position: absolute;
         left: -30px;
-        background-image: url('@/images/桂馥香米 packshot.png');
+        background-image: url("@/images/桂馥香米 packshot.png");
         background-size: 100%;
         background-repeat: no-repeat;
       }
@@ -35,7 +35,12 @@
         margin: 1rem 0;
         padding-bottom: 1.5rem;
         width: 740px;
+        font-size: 36px;
         border-bottom: 1px solid $black;
+      }
+
+      .content {
+        font-weight: 500;
       }
 
       .buy-tap {
@@ -49,43 +54,15 @@
   #section4_story {
     position: relative;
     width: 100%;
-    background-image: url('@/images/稻香世家第四代成立芳隆米行.png');
+    background-image: url("@/images/稻香世家第四代成立芳隆米行.png");
     background-size: 794px 1153px;
     background-repeat: no-repeat;
     background-position: right top;
-
-    // &::before {
-    //   content: '';
-    //   width: 794px;
-    //   height: 1153px;
-    //   position: absolute;
-    //   right: 0;
-    //   top: 0;
-    //   background-image: url('@/images/稻香世家第四代成立芳隆米行.png');
-    //   background-size: 100%;
-    //   background-attachment: scroll;
-    //   background-position: 0 0;
-    //   background-repeat: no-repeat;
-    //   overflow: hidden;
-    // }
   }
 
   .story {
     position: relative;
     height: 1200px;
-
-    // &::before {
-    //   content: '';
-    //   width: 794px;
-    //   height: 1153px;
-    //   position: absolute;
-    //   right: -30%;
-    //   top: 0;
-    //   background-image: url('@/images/稻香世家第四代成立芳隆米行.png');
-    //   background-size: 794px 1153px;
-    //   background-attachment: scroll;
-    //   background-repeat: no-repeat;
-    // }
 
     .sub-title {
       margin: 2.5rem 0 4rem;
@@ -122,6 +99,10 @@
         align-items: center;
         justify-content: center;
         height: 148px;
+
+        &.content {
+          font-size: 28px;
+        }
       }
 
       text-align: center;

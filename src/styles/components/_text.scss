@@ -1,7 +1,7 @@
 /* 主標題 */
 .title {
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: $zh-font;
 }
 
@@ -9,17 +9,15 @@
 .sub-title {
   font-size: 40px;
   color: $dark-red;
-  font-weight: 600;
+  font-weight: 500;
   font-family: $zh-font;
 }
 
 /* 英文標題 */
 .en-title {
   font-size: 22px;
-  font-weight: 500;
   text-transform: uppercase;
   font-family: $en-font;
-  letter-spacing: -3px;
 }
 
 /* 區塊內文字 */

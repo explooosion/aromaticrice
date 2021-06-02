@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter",
+  "name": "unionrice-landing",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "",
   "scripts": {
     "lint": "npm run lint:styles; npm run lint:scripts",
     "lint:styles": "stylelint src",
@@ -12,7 +12,7 @@
   "homepage": ".",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "url": "git+https://github.com/explooosion/unionrice-landing.git"
   },
   "keywords": [
     "webpack",
@@ -22,10 +22,10 @@
     "javascript",
     "webdev"
   ],
-  "author": "webkid.io",
+  "author": "Robby",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
+    "url": "https://github.com/explooosion/unionrice-landing/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
