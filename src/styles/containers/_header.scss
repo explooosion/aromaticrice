@@ -65,7 +65,8 @@
       text-align: center;
       font-size: 38px;
       letter-spacing: 0.75rem;
-      font-family: 'PingFang';
+      font-weight: 500;
+      font-family: $zh-font;
     }
   }
 
@@ -78,16 +79,16 @@
     margin: 0 auto;
     text-align: right;
 
-    h1 {
+    .title {
       margin-bottom: 2rem;
     }
 
-    h2 {
+    .sub-title {
       margin-bottom: 1rem;
       font-size: 44px; /* custom */
     }
 
-    h3 {
+    .en-title {
       margin-bottom: 3rem;
     }
   }
