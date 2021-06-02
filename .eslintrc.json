@@ -1,13 +1,6 @@
 {
-  "ignorePatterns": ["dist", "node_modules"],
+  "ignorePatterns": ["docs", "node_modules"],
   "rules": {
-    "max-len": [
-      "error",
-      {
-        "ignoreUrls": true,
-        "code": 80
-      }
-    ],
     "prefer-template": "off",
     "indent": [1, 2],
     "object-curly-spacing": 1,
@@ -28,7 +21,6 @@
     "import/prefer-default-export": 0,
     "func-names": [1, "as-needed"],
     "arrow-body-style": 1,
-    "semi": [1, "never"],
     "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
   },
   "env": {

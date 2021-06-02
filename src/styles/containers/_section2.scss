@@ -1,0 +1,121 @@
+#section2 {
+  margin-bottom: 10rem;
+
+  .full-banner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 815px;
+    background-image: url('@/images/Key Visual_banner.png');
+    background-size: 1944px 815px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100%;
+      height: 20px;
+      background-image: url('@/images/Background_Shadow.png');
+      background-size: 1917px 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+    }
+  }
+
+  .head {
+    position: absolute;
+    top: 33%;
+    left: 53%;
+
+    .en-title {
+      margin: 1rem 0 3rem;
+    }
+
+    /* 修正全形符號［的間距 */
+    .sub-title {
+      margin-left: -15px;
+    }
+  }
+
+  .rice {
+    position: relative;
+    margin: 0 auto;
+    height: 1024px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 32%;
+      left: 50%;
+      width: 412px;
+      height: 520px;
+      background-image: url('@/images/Visual_02.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 7%;
+      right: 40%;
+      width: 412px;
+      height: 520px;
+      background-image: url('@/images/Visual_01.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .rice-left {
+      position: absolute;
+      top: 425px;
+      left: -5%;
+    }
+
+    .rice-right {
+      position: absolute;
+      top: 665px;
+      right: -8%;
+
+      .sub-title {
+        text-align: right;
+      }
+
+      .content {
+        margin-right: 4rem;
+      }
+    }
+
+    .sub-title {
+      padding: 0 4.5rem 1rem;
+      border-bottom: 1px solid $black;
+    }
+
+    .content {
+      position: relative;
+      margin: 3.5rem 0 0 4rem;
+      font-family: $zh-font;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -50px;
+        width: 40px;
+        height: 40px;
+        background-image: url('@/images/list-icon.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

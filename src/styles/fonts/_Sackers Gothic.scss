@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Sackers Gothic Std';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Sackers Gothic Std'),
+    url('./fonts/Sackers Gothic/SackersGothic Light AT.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sackers Gothic Std';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Sackers Gothic Std'),
+    url('./fonts/Sackers Gothic/SackersGothicStd-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sackers Gothic Std';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Sackers Gothic Std'),
+    url('./fonts/Sackers Gothic/SackersGothicStd-Medium.otf') format('opentype');
+}

@@ -1,18 +1,28 @@
-// // Test import of a JavaScript module
-// import { example } from '@/js/example'
-
-// // Test import of an asset
-// import webpackLogo from '@/images/webpack-logo.svg'
-
-// // Test import of styles
 import '@/styles/index.scss'
 
-// // Appending to the DOM
-// const logo = document.createElement('img')
-// logo.src = webpackLogo
+const gopTop = document.getElementById('gotop')
 
-// const heading = document.createElement('h1')
-// heading.textContent = example()
+gopTop.addEventListener('click', () => {
+  document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+})
 
-// const app = document.querySelector('#root')
-// app.append(logo, heading)
+document.querySelectorAll('.nav-item').forEach((nav) => {
+  nav.addEventListener('click', () => {
+    document.querySelectorAll('.nav-item').forEach((n) => {
+      if (n === nav) {
+        n.classList.add('active')
+      } else {
+        n.classList.remove('active')
+      }
+    })
+
+    document
+      .getElementById(nav.getAttribute('data-target'))
+      .scrollIntoView({ behavior: 'smooth' })
+  })
+})
+
+window.onscroll = () => {
+  const opacity = document.documentElement.scrollTop * 0.0005
+  gopTop.style.opacity = opacity < 0.3 ? opacity : 0.3
+}

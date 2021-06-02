@@ -1,0 +1,16 @@
+#gotop {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('@/images/Arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $black;
+  opacity: 0.3;
+  cursor: pointer;
+}

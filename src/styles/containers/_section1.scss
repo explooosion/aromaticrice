@@ -1,0 +1,56 @@
+#section1 {
+  margin: 0 auto;
+  padding: 5rem 0 7rem;
+  width: 920px;
+
+  .head {
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  .row {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    .col {
+      flex: 1;
+
+      &.context {
+        padding: 5rem 0 0 5rem;
+
+        .en-title {
+          margin-bottom: 0.5rem;
+          font-size: 30px;
+          color: $dark-red;
+        }
+
+        .content {
+          margin-top: 2rem;
+          padding-top: 2rem;
+          font-weight: 500;
+          border-top: 1px solid $black;
+        }
+      }
+    }
+
+    img {
+      float: right;
+    }
+
+    /* 圖片在右的區塊 */
+    &.reverse {
+      text-align: right;
+
+      img {
+        float: left;
+      }
+
+      .context {
+        padding: 5rem 5rem 0 0;
+      }
+    }
+  }
+}

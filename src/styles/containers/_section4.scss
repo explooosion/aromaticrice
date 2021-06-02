@@ -1,0 +1,131 @@
+#section4 {
+  margin: 7rem 0 3rem;
+  position: relative;
+  width: 100%;
+
+  .buy {
+    display: flex;
+    height: 700px;
+
+    .buy-rice {
+      position: relative;
+      display: block;
+      width: 498px;
+
+      &::before {
+        content: '';
+        width: 498px;
+        height: 1043px;
+        position: absolute;
+        left: -30px;
+        background-image: url('@/images/桂馥香米 packshot.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .buy-app {
+      margin-top: 6.5rem;
+
+      .title {
+        margin-left: 1rem;
+      }
+
+      .sub-title {
+        margin: 1rem 0;
+        padding-bottom: 1.5rem;
+        width: 740px;
+        border-bottom: 1px solid $black;
+      }
+
+      .buy-tap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  #section4_story {
+    position: relative;
+    width: 100%;
+    background-image: url('@/images/稻香世家第四代成立芳隆米行.png');
+    background-size: 794px 1153px;
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    // &::before {
+    //   content: '';
+    //   width: 794px;
+    //   height: 1153px;
+    //   position: absolute;
+    //   right: 0;
+    //   top: 0;
+    //   background-image: url('@/images/稻香世家第四代成立芳隆米行.png');
+    //   background-size: 100%;
+    //   background-attachment: scroll;
+    //   background-position: 0 0;
+    //   background-repeat: no-repeat;
+    //   overflow: hidden;
+    // }
+  }
+
+  .story {
+    position: relative;
+    height: 1200px;
+
+    // &::before {
+    //   content: '';
+    //   width: 794px;
+    //   height: 1153px;
+    //   position: absolute;
+    //   right: -30%;
+    //   top: 0;
+    //   background-image: url('@/images/稻香世家第四代成立芳隆米行.png');
+    //   background-size: 794px 1153px;
+    //   background-attachment: scroll;
+    //   background-repeat: no-repeat;
+    // }
+
+    .sub-title {
+      margin: 2.5rem 0 4rem;
+    }
+
+    .content {
+      width: 650px;
+      text-align: justify;
+    }
+
+    a {
+      margin-top: 8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 60px;
+      color: #fff;
+      background: $dark-red;
+      font-family: $zh-font;
+      font-size: 28px;
+      text-decoration: none;
+      border-radius: 0.25rem;
+    }
+  }
+
+  .awards {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 148px;
+      }
+
+      text-align: center;
+      line-height: 42px;
+    }
+  }
+}
