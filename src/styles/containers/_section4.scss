@@ -7,10 +7,20 @@
     display: flex;
     height: 700px;
 
+    @media only screen and (max-width: $screen-xl) {
+      flex-direction: column-reverse;
+      height: initial;
+    }
+
     .buy-rice {
       position: relative;
       display: block;
       width: 498px;
+
+      @media only screen and (max-width: $screen-xl) {
+        margin: 0 auto;
+        height: 1043px;
+      }
 
       &::before {
         content: "";
@@ -27,6 +37,12 @@
     .buy-app {
       margin-top: 6.5rem;
 
+      > div {
+        @media only screen and (max-width: $screen-xl) {
+          justify-content: center;
+        }
+      }
+
       .title {
         margin-left: 1rem;
       }
@@ -37,6 +53,13 @@
         width: 740px;
         font-size: 36px;
         border-bottom: 1px solid $black;
+
+        @media only screen and (max-width: $screen-xl) {
+          text-align: center;
+          border-bottom: none;
+          margin: 1rem;
+          width: 100%;
+        }
       }
 
       .content {
@@ -47,6 +70,30 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .content-mobile {
+          display: none;
+          margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: $screen-xl) {
+          position: absolute;
+          top: 70%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          justify-content: center;
+          width: 70%;
+          border-top: 1px solid $black;
+          padding-top: 3rem;
+
+          .content {
+            display: none;
+          }
+          .content-mobile {
+            display: block;
+          }
+        }
       }
     }
   }
@@ -58,19 +105,40 @@
     background-size: 794px 1153px;
     background-repeat: no-repeat;
     background-position: right top;
+
+    @media only screen and (max-width: $screen-xl) {
+      height: 1707px;
+      background-image: url("@/images/rice_house_mobile.png");
+      background-size: $screen-xl 1707px;
+      background-position: center;
+    }
   }
 
   .story {
     position: relative;
     height: 1200px;
 
+    @media only screen and (max-width: $screen-xl) {
+      text-align: center;
+    }
+
     .sub-title {
       margin: 2.5rem 0 4rem;
+
+      @media only screen and (max-width: $screen-xl) {
+        color: $black;
+      }
     }
 
     .content {
       width: 650px;
       text-align: justify;
+
+      @media only screen and (max-width: $screen-xl) {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 650px;
+      }
     }
 
     a {
@@ -86,12 +154,25 @@
       font-size: 28px;
       text-decoration: none;
       border-radius: 0.25rem;
+
+      @media only screen and (max-width: $screen-xl) {
+        position: absolute;
+        bottom: -400px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
     }
   }
 
   .awards {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $screen-xl) {
+      display: none;
+      /* TODO 使用輪播圖 */
+    }
 
     > div {
       div {

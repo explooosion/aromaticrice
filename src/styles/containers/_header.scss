@@ -8,6 +8,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media only screen and (max-width: $screen-xl) {
+    height: 2190px;
+    background-image: url("@/images/Key Visual_mobile.png");
+    background-size: $screen-xl 100%;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -22,6 +28,10 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+
+    @media only screen and (max-width: $screen-xl) {
+      background-size: 100% 20px;
+    }
   }
 
   .header-logo {
@@ -31,6 +41,10 @@
     right: 0;
     margin: 0 auto;
     width: 276px;
+
+    @media only screen and (max-width: $screen-xl) {
+      top: 100px;
+    }
 
     > div {
       margin: 0 auto;
@@ -44,10 +58,10 @@
   .header-info {
     position: absolute;
     top: 35%;
-    left: 0;
-    right: 0;
-    height: auto;
+    right: 30px;
     margin: 0 auto;
+    padding-right: 3rem;
+    height: auto;
     text-align: right;
 
     .title {
@@ -62,6 +76,12 @@
     .en-title {
       margin-bottom: 3rem;
     }
+
+    @media only screen and (max-width: $screen-xl) {
+      top: 66%;
+      right: 0;
+      text-align: center;
+    }
   }
 
   .nav {
@@ -71,6 +91,10 @@
     right: 0;
     height: auto;
     margin: 0 auto;
+
+    @media only screen and (max-width: $screen-xl) {
+      display: none;
+    }
 
     ul {
       display: flex;

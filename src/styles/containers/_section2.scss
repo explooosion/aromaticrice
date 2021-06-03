@@ -1,19 +1,29 @@
 #section2 {
   margin-bottom: 10rem;
 
+  @media only screen and (max-width: $screen-xl) {
+    margin-bottom: 0;
+  }
+
   .full-banner {
     position: relative;
     display: block;
     margin: 0 auto;
     width: 100%;
     height: 815px;
-    background-image: url('@/images/Key Visual_banner.png');
+    background-image: url("@/images/Key Visual_banner.png");
     background-size: 1944px 815px;
     background-repeat: no-repeat;
     background-position: center;
 
+    @media only screen and (max-width: $screen-xl) {
+      height: 1433px;
+      background-image: url("@/images/Key Visual_banner_mobile.png");
+      background-size: $screen-xl 100%;
+    }
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -15px;
       left: 0;
@@ -21,11 +31,15 @@
       margin: 0 auto;
       width: 100%;
       height: 20px;
-      background-image: url('@/images/Background_Shadow.png');
+      background-image: url("@/images/Background_Shadow.png");
       background-size: 1917px 20px;
       background-repeat: no-repeat;
       background-position: center;
       z-index: -1;
+
+      @media only screen and (max-width: $screen-xl) {
+        display: none;
+      }
     }
   }
 
@@ -33,6 +47,14 @@
     position: absolute;
     top: 33%;
     left: 53%;
+
+    @media only screen and (max-width: $screen-xl) {
+      top: 60%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
 
     .en-title {
       margin: 1rem 0 3rem;
@@ -49,72 +71,138 @@
     margin: 0 auto;
     height: 1024px;
 
+    @media only screen and (max-width: $screen-xll) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      width: 70%;
+      height: 2190px;
+    }
+
+    /* 試香 */
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 32%;
       left: 50%;
       width: 412px;
       height: 520px;
-      background-image: url('@/images/Visual_02.png');
+      background-image: url("@/images/Visual_02.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
+
+      @media only screen and (max-width: $screen-xl) {
+        top: 45%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: $screen-sm) {
+        width: 247px;
+        height: 260px;
+      }
     }
 
+    /* 調香 */
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 7%;
       right: 40%;
       width: 412px;
       height: 520px;
-      background-image: url('@/images/Visual_01.png');
+      background-image: url("@/images/Visual_01.png");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
-    }
 
-    .rice-left {
-      position: absolute;
-      top: 425px;
-      left: -5%;
-    }
-
-    .rice-right {
-      position: absolute;
-      top: 665px;
-      right: -8%;
-
-      .sub-title {
-        text-align: right;
+      @media only screen and (max-width: $screen-xl) {
+        top: -5%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
       }
 
-      .content {
-        margin-right: 4rem;
+      @media only screen and (max-width: $screen-sm) {
+        width: 247px;
+        height: 260px;
       }
     }
 
     .sub-title {
       padding: 0 4.5rem 1rem;
       border-bottom: 1px solid $black;
+
+      @media only screen and (max-width: $screen-xl) {
+        text-align: center;
+      }
     }
 
+    /* 通用設定 */
     .content {
       position: relative;
       margin: 3.5rem 0 0 4rem;
       font-family: $zh-font;
 
+      @media only screen and (max-width: $screen-xl) {
+        margin-left: 0;
+      }
+
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: -50px;
         width: 40px;
         height: 40px;
-        background-image: url('@/images/list-icon.png');
+        background-image: url("@/images/list-icon.png");
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
+      }
+    }
+
+    .rice-left {
+      position: absolute;
+      top: 425px;
+      left: -5%;
+
+      @media only screen and (max-width: $screen-xl) {
+        top: 360px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    .rice-right {
+      position: absolute;
+      top: 665px;
+      right: -5%;
+
+      @media only screen and (max-width: $screen-xl) {
+        top: 1450px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .sub-title {
+        text-align: right;
+
+        @media only screen and (max-width: $screen-xl) {
+          text-align: center;
+        }
+      }
+
+      .content {
+        margin-right: 4rem;
+
+        @media only screen and (max-width: $screen-xl) {
+          margin-right: 0;
+        }
       }
     }
   }

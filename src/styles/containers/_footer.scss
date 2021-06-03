@@ -4,18 +4,58 @@ footer {
   background-color: $dark-red;
   color: #fff;
 
+  @media only screen and (max-width: $screen-xl) {
+    height: 742px;
+  }
+
   img {
     margin-top: 4rem;
+
+    @media only screen and (max-width: $screen-xl) {
+      margin-top: 8rem;
+    }
   }
 
   .content {
     margin: 1.5rem 0 3.5rem;
     letter-spacing: 6px;
     font-weight: 400;
+
+    @media only screen and (max-width: $screen-xl) {
+      margin-bottom: 10rem;
+    }
   }
 
   p {
-    margin-bottom: 1rem;
     font-weight: 300;
+    font-family: "Noto Sans TC", -apple-system, sans-serif;
+    font-size: 18px;
+
+    @media only screen and (max-width: $screen-xl) {
+      padding: 0 0.5rem;
+      font-size: 28px;
+    }
+
+    @media only screen and (max-width: $screen-md) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $screen-sm) {
+      font-size: 16px;
+    }
+  }
+
+  .desktop {
+    @media only screen and (max-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  .mobile {
+    display: none;
+
+    @media only screen and (max-width: $screen-xl) {
+      display: block;
+    }
   }
 }

@@ -3,6 +3,10 @@
   padding: 5rem 0 7rem;
   width: 920px;
 
+  @media only screen and (max-width: $screen-xl) {
+    width: 100%;
+  }
+
   .head {
     margin: 0 auto;
     padding-bottom: 5rem;
@@ -15,41 +19,90 @@
     justify-content: space-between;
     text-align: left;
 
+    @media only screen and (max-width: $screen-xl) {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .col {
       flex: 1;
 
       &.context {
         padding: 5rem 0 0 5rem;
 
+        @media only screen and (max-width: $screen-xl) {
+          padding: 0;
+        }
+
         .en-title {
           margin-bottom: 0.5rem;
           font-size: 30px;
           color: $dark-red;
+
+          @media only screen and (max-width: $screen-xl) {
+            margin-top: 2rem;
+          }
+        }
+
+        .sub-title {
+          margin-bottom: 2rem;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid $black;
+
+          @media only screen and (max-width: $screen-xl) {
+            margin: 0 auto 1rem;
+            padding-bottom: 1rem;
+            width: 320px;
+          }
         }
 
         .content {
-          margin-top: 2rem;
-          padding-top: 2rem;
           font-weight: 500;
-          border-top: 1px solid $black;
+
+          @media only screen and (max-width: $screen-xl) {
+            margin-bottom: 3rem;
+          }
         }
       }
     }
 
     img {
       float: right;
+
+      @media only screen and (max-width: $screen-xl) {
+        float: initial;
+        width: 70%;
+        height: 100%;
+      }
+
+      @media only screen and (max-width: $screen-xl) {
+        max-width: 80%;
+      }
     }
 
     /* 圖片在右的區塊 */
     &.reverse {
       text-align: right;
 
+      @media only screen and (max-width: $screen-xl) {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
       img {
         float: left;
+
+        @media only screen and (max-width: $screen-xl) {
+          float: initial;
+        }
       }
 
       .context {
         padding: 5rem 5rem 0 0;
+
+        @media only screen and (max-width: $screen-xl) {
+          padding: 0;
+        }
       }
     }
   }

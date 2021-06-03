@@ -5,7 +5,7 @@
 
 /* Fonts */
 @import "./fonts/Sackers Gothic";
-@import './fonts/PingFang';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
 
 /* Models */
 @import "./models/color";
@@ -32,6 +32,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 12px;
   font-family: $global-font;
   color: $black;
   background-color: #fff;
