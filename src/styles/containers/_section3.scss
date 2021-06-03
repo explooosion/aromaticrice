@@ -110,11 +110,11 @@
 #section3-m {
   .slider {
     position: absolute;
-    bottom: 8%;
+    bottom: 2%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: calc(#{150% * 203px / $screen-psm});
+    width: calc(#{170% * 203px / $screen-psm});
 
     .slider-btn {
       position: absolute;
@@ -135,8 +135,10 @@
       margin-top: 1rem;
 
       > button {
-        width: 1px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
+        border: none;
+        outline: none;
         border-radius: 100%;
         background-color: $black;
         opacity: 0.3;
