@@ -106,3 +106,47 @@
     }
   }
 }
+
+#section3-m {
+  .slider {
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(#{150% * 203px / $screen-psm});
+
+    .slider-btn {
+      position: absolute;
+      bottom: 40%;
+      width: calc(#{300% * 90px / $screen-psm});
+      z-index: 1;
+
+      &#section3prevBtn {
+        left: -70%;
+      }
+
+      &#section3nextBtn {
+        right: -70%;
+      }
+    }
+
+    .tns-nav {
+      margin-top: 1rem;
+
+      > button {
+        margin: 0 0.5rem;
+        width: 10px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $black;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &.tns-nav-active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

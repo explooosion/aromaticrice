@@ -58,6 +58,7 @@
   .header-info {
     position: absolute;
     top: 35%;
+    left: 0;
     right: 30px;
     margin: 0 auto;
     padding-right: 3rem;
@@ -115,5 +116,33 @@
         }
       }
     }
+  }
+}
+
+#header-m {
+  img {
+    width: 100%;
+  }
+
+  .buy-m {
+    position: fixed;
+    top: 30%;
+    right: 0;
+    display: block;
+    max-width: 146px;
+    width: calc(#{100% * 146px / $screen-psm});
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .nav {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 65px;
+    width: calc(#{100% * 65px / $screen-psm});
+    z-index: 1;
+    cursor: pointer;
   }
 }

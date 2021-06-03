@@ -107,3 +107,12 @@
     }
   }
 }
+
+#section1-m {
+  margin: 2rem auto 10rem;
+
+  img {
+    max-width: 705px;
+    width: calc(#{100% * 705px / $screen-psm});
+  }
+}
