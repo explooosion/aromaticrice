@@ -110,7 +110,7 @@
 #section3-m {
   .slider {
     position: absolute;
-    bottom: 2%;
+    bottom: 5%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -132,17 +132,21 @@
     }
 
     .tns-nav {
-      margin-top: 1rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 5%;
 
       > button {
         width: 5px;
-        height: 5px;
+        height: 12px;
         border: none;
         outline: none;
         border-radius: 100%;
         background-color: $black;
-        opacity: 0.3;
+        opacity: 0.2;
         cursor: pointer;
+        transform: scale(0.8);
 
         &.tns-nav-active {
           opacity: 1;

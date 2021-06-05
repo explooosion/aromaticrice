@@ -2,9 +2,9 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 1054px;
+  height: 768px;
   background-image: url("@/images/Key Visual.png");
-  background-size: 1920px 1054px;
+  background-size: 1400px 768px;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -24,7 +24,7 @@
     width: 100%;
     height: 20px;
     background-image: url("@/images/Background_Shadow.png");
-    background-size: 1917px 20px;
+    background-size: 768px 20px;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
@@ -128,7 +128,9 @@
     position: fixed;
     top: 30%;
     right: 0;
-    display: block;
+    // TODO: 暫時隱藏
+    display: none; 
+    // display: block;
     max-width: 146px;
     width: calc(#{100% * 146px / $screen-psm});
     text-decoration: none;

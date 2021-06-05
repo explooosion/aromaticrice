@@ -41,8 +41,22 @@ body {
 }
 
 .mobile {
+  position: relative;
   display: none;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
 
   > * {
     position: relative;
@@ -57,6 +71,82 @@ body {
     margin: 0 auto;
     width: 100%;
     z-index: -1;
+  }
+
+  &.toggle {
+    &::before {
+      opacity: 0.6;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    .navbar {
+      left: 0;
+
+      &::before {
+        display: block;
+      }
+    }
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -80vw;
+    display: flex;
+    justify-content: flex-start;
+    width: 80vw;
+    height: 100vh;
+    background-color: rgba($black, 0.95);
+    z-index: 2;
+    transition: left 0.3s ease;
+
+    #navbar-close {
+      position: absolute;
+      top: 3%;
+      right: 10%;
+      font-size: 70px;
+      margin-left: 50px;
+      color: rgba(#fff, 0.9);
+      text-decoration: none;
+
+      @media only screen and (max-width: $screen-sm) {
+        font-size: 60px;
+      }
+
+      @media only screen and (max-width: $screen-xs) {
+        font-size: 40px;
+      }
+    }
+
+    ul {
+      margin: 30% 0 0 15%;
+
+      li {
+        margin: 1.5rem 0;
+        font-size: 34px;
+        text-align: left;
+        color: rgba(#fff, 0.8);
+        cursor: pointer;
+        letter-spacing: 2px;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: rgba(#fff, 1);
+        }
+
+        @media only screen and (max-width: $screen-sm) {
+          font-size: 28px;
+        }
+
+        @media only screen and (max-width: $screen-xs) {
+          font-size: 22px;
+        }
+      }
+    }
   }
 }
 

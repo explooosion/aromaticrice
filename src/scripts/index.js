@@ -4,6 +4,7 @@ if (process.env.NODE_ENV === 'development') {
   require('../index.html');
 }
 
+
 const gopTop = document.getElementById('gotop');
 
 gopTop.addEventListener('click', () => {
@@ -22,13 +23,9 @@ document.querySelectorAll('.nav-item').forEach((nav) => {
     document
       .getElementById(nav.getAttribute('data-target'))
       .scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('mobile').classList.remove('toggle');
   });
 });
-
-window.onscroll = () => {
-  const opacity = document.documentElement.scrollTop * 0.0005;
-  gopTop.style.opacity = opacity < 0.3 ? opacity : 0.3;
-};
 
 document.querySelectorAll('img').forEach(img => img.addEventListener('contextmenu', e => e.preventDefault()));
 
@@ -57,3 +54,12 @@ const slide4 = tns({
 
 document.getElementById('section4prevBtn').addEventListener('click', () => slide4.goTo('prev'));
 document.getElementById('section4nextBtn').addEventListener('click', () => slide4.goTo('next'));
+
+document.getElementById('navbar-open').addEventListener('click', () => document.getElementById('mobile').classList.add('toggle'));
+document.getElementById('navbar-close').addEventListener('click', () => document.getElementById('mobile').classList.remove('toggle'));
+
+
+window.onscroll = () => {
+  const opacity = document.documentElement.scrollTop * 0.0005;
+  gopTop.style.opacity = opacity < 0.3 ? opacity : 0.3;
+};
