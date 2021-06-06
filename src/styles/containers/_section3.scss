@@ -27,12 +27,12 @@
   .fixed-banner {
     position: absolute;
     top: -6%;
-    right: 0;
+    right: 2%;
     width: 935px;
     height: 1182px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 935px 1182px;
+    background-size: 100%;
     background-image: url("@/images/Key Visual_illustration.png");
 
     @media only screen and (max-width: $screen-xl) {
