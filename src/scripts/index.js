@@ -57,6 +57,7 @@ document.getElementById('section4nextBtn').addEventListener('click', () => slide
 
 document.getElementById('navbar-open').addEventListener('click', () => document.getElementById('mobile').classList.add('toggle'));
 document.getElementById('navbar-close').addEventListener('click', () => document.getElementById('mobile').classList.remove('toggle'));
+document.getElementById('bg-close').addEventListener('click', () => document.getElementById('mobile').classList.remove('toggle'));
 
 
 window.onscroll = () => {
