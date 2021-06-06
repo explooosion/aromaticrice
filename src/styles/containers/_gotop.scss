@@ -2,16 +2,16 @@
   position: fixed;
   bottom: 5rem;
   right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 64px;
   height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("@/images/Arrow.png");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-color: $black;
   opacity: 0.3;
-  cursor: pointer;
   z-index: 1;
+  background-image: url("@/images/Arrow.png");
+  cursor: pointer;
 }

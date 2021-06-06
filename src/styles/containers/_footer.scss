@@ -1,8 +1,8 @@
 .footer {
-  text-align: center;
   height: 455px;
-  background-color: $dark-red;
+  text-align: center;
   color: #fff;
+  background-color: $dark-red;
 
   @media only screen and (max-width: $screen-xl) {
     height: 742px;
@@ -18,8 +18,8 @@
 
   .content {
     margin: 1.5rem 0 3.5rem;
-    letter-spacing: 6px;
     font-weight: 400;
+    letter-spacing: 6px;
 
     @media only screen and (max-width: $screen-xl) {
       margin-bottom: 10rem;
@@ -27,9 +27,9 @@
   }
 
   p {
-    font-weight: 300;
-    font-family: "Noto Sans TC", -apple-system, sans-serif;
     font-size: 18px;
+    font-family: "Noto Sans TC", -apple-system, sans-serif;
+    font-weight: 300;
 
     @media only screen and (max-width: $screen-xl) {
       padding: 0 0.5rem;

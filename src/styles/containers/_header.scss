@@ -3,31 +3,31 @@
   margin: 0 auto;
   width: 100%;
   height: 768px;
-  background-image: url("@/images/Key Visual.png");
-  background-size: 1400px 768px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1400px 768px;
+  background-image: url("@/images/Key Visual.png");
 
   @media only screen and (max-width: $screen-xl) {
     height: 2190px;
-    background-image: url("@/images/Key Visual_mobile.png");
     background-size: $screen-xl 100%;
+    background-image: url("@/images/Key Visual_mobile.png");
   }
 
   &::after {
     content: "";
     position: absolute;
     bottom: -15px;
-    left: 0;
     right: 0;
+    left: 0;
     margin: 0 auto;
     width: 100%;
     height: 20px;
-    background-image: url("@/images/Background_Shadow.png");
-    background-size: 768px 20px;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 768px 20px;
     z-index: -1;
+    background-image: url("@/images/Background_Shadow.png");
 
     @media only screen and (max-width: $screen-xl) {
       background-size: 100% 20px;
@@ -37,45 +37,55 @@
   .header-logo {
     position: absolute;
     top: 50px;
-    left: 0;
     right: 0;
+    left: 0;
     margin: 0 auto;
-    width: 276px;
+    width: 176px;
 
     @media only screen and (max-width: $screen-xl) {
       top: 100px;
     }
 
-    > div {
+    .content {
       margin: 0 auto;
-      text-align: center;
-      font-size: 38px;
-      letter-spacing: 0.75rem;
+      font-size: 24px;
       font-family: $zh-font;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
   .header-info {
     position: absolute;
-    top: 35%;
-    left: 0;
+    top: 30%;
     right: 30px;
+    left: 0;
     margin: 0 auto;
     padding-right: 3rem;
     height: auto;
     text-align: right;
 
     .title {
-      margin-bottom: 2rem;
+      font-size: 3.25rem; /* custom */
+      margin-bottom: 1.5rem;
     }
 
     .sub-title {
+      font-size: 32px; /* custom */
       margin-bottom: 1rem;
-      font-size: 44px; /* custom */
     }
 
     .en-title {
-      margin-bottom: 3rem;
+      font-size: 16px; /* custom */
+      margin-bottom: 3.5rem;
+    }
+
+    .content {
+      font-size: 25px; /* custom */
     }
 
     @media only screen and (max-width: $screen-xl) {
@@ -88,10 +98,10 @@
   .nav {
     position: absolute;
     bottom: 0;
-    left: 0;
     right: 0;
-    height: auto;
+    left: 0;
     margin: 0 auto;
+    height: auto;
 
     @media only screen and (max-width: $screen-xl) {
       display: none;
@@ -101,18 +111,18 @@
       display: flex;
 
       li {
-        flex: 1;
         padding-bottom: 1rem;
-        text-align: center;
         font-size: 32px;
-        color: $black;
         font-weight: 500;
+        text-align: center;
+        color: $black;
+        flex: 1;
         cursor: pointer;
         user-select: none;
 
         &.active {
-          border-bottom: 5px solid $dark-red2;
           color: $dark-red;
+          border-bottom: 5px solid $dark-red2;
         }
       }
     }
@@ -129,21 +139,21 @@
     top: 30%;
     right: 0;
     // TODO: 暫時隱藏
-    display: none; 
+    display: none;
+    width: calc(#{100% * 146px / $screen-psm});
     // display: block;
     max-width: 146px;
-    width: calc(#{100% * 146px / $screen-psm});
     text-decoration: none;
-    cursor: pointer;
     z-index: 1;
+    cursor: pointer;
   }
 
   .nav {
     position: absolute;
     top: 10%;
     left: 10%;
-    max-width: 65px;
     width: calc(#{100% * 65px / $screen-psm});
+    max-width: 65px;
     z-index: 1;
     cursor: pointer;
   }

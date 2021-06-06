@@ -1,15 +1,18 @@
 #section4 {
-  margin: 7rem 0 3rem;
   position: relative;
+  margin: 7rem 0 3rem;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("@/images/Pattern vector.png");
 
   .buy {
     display: flex;
     height: 700px;
 
     @media only screen and (max-width: $screen-xl) {
-      flex-direction: column-reverse;
       height: initial;
+      flex-direction: column-reverse;
     }
 
     .buy-rice {
@@ -24,13 +27,13 @@
 
       &::before {
         content: "";
-        width: 498px;
-        height: 1043px;
         position: absolute;
         left: -30px;
-        background-image: url("@/images/packshot.png");
-        background-size: 100%;
+        width: 498px;
+        height: 1043px;
         background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url("@/images/packshot.png");
       }
     }
 
@@ -55,10 +58,10 @@
         border-bottom: 1px solid $black;
 
         @media only screen and (max-width: $screen-xl) {
-          text-align: center;
-          border-bottom: none;
           margin: 1rem;
           width: 100%;
+          text-align: center;
+          border-bottom: 0;
         }
       }
 
@@ -68,8 +71,8 @@
 
       .buy-tap {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
         .content-mobile {
           display: none;
@@ -79,17 +82,18 @@
         @media only screen and (max-width: $screen-xl) {
           position: absolute;
           top: 70%;
-          left: 0;
           right: 0;
-          margin: 0 auto;
+          left: 0;
           justify-content: center;
+          margin: 0 auto;
+          padding-top: 3rem;
           width: 70%;
           border-top: 1px solid $black;
-          padding-top: 3rem;
 
           .content {
             display: none;
           }
+
           .content-mobile {
             display: block;
           }
@@ -101,16 +105,16 @@
   #section4_story {
     position: relative;
     width: 100%;
-    background-image: url("@/images/rice_house.png");
-    background-size: 794px 1153px;
-    background-repeat: no-repeat;
     background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 794px 1153px;
+    background-image: url("@/images/rice_house.png");
 
     @media only screen and (max-width: $screen-xl) {
       height: 1707px;
-      background-image: url("@/images/rice_house_mobile.png");
-      background-size: $screen-xl 1707px;
       background-position: center;
+      background-size: $screen-xl 1707px;
+      background-image: url("@/images/rice_house_mobile.png");
     }
   }
 
@@ -142,24 +146,24 @@
     }
 
     a {
-      margin-top: 8rem;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      margin-top: 8rem;
       width: 300px;
       height: 60px;
+      font-size: 28px;
+      font-family: $zh-font;
+      text-decoration: none;
       color: #fff;
       background: $dark-red;
-      font-family: $zh-font;
-      font-size: 28px;
-      text-decoration: none;
       border-radius: 0.25rem;
 
       @media only screen and (max-width: $screen-xl) {
         position: absolute;
         bottom: -400px;
-        left: 0;
         right: 0;
+        left: 0;
         margin: 0 auto;
       }
     }
@@ -171,10 +175,14 @@
 
     @media only screen and (max-width: $screen-xl) {
       display: none;
+
       /* TODO 使用輪播圖 */
     }
 
     > div {
+      text-align: center;
+      line-height: 42px;
+
       div {
         display: flex;
         align-items: center;
@@ -185,9 +193,6 @@
           font-size: 28px;
         }
       }
-
-      text-align: center;
-      line-height: 42px;
     }
   }
 }
@@ -196,8 +201,8 @@
   margin: 10% auto 15%;
 
   > img:first-child {
-    max-width: 837px;
     width: calc(#{100% * 837px / $screen-psm});
+    max-width: 837px;
   }
 
   .fb-m {
@@ -206,18 +211,18 @@
     right: 0;
     left: 0;
     margin: 0 auto;
-    max-width: 449px;
     width: calc(#{100% * 449px / $screen-psm});
+    max-width: 449px;
     text-decoration: none;
-    cursor: pointer;
     z-index: 1;
+    cursor: pointer;
   }
 
   .slider {
     position: absolute;
     bottom: 4%;
-    left: 0;
     right: 0;
+    left: 0;
     margin: 0 auto;
     width: calc(#{120% * 302px / $screen-psm});
 
@@ -243,18 +248,18 @@
 
     .tns-nav {
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
+      justify-content: space-evenly;
       margin-top: 14%;
 
       > button {
         width: 5px;
         height: 12px;
-        border: none;
-        outline: none;
-        border-radius: 100%;
         background-color: $black;
+        border: 0;
+        border-radius: 100%;
         opacity: 0.2;
+        outline: none;
         cursor: pointer;
         transform: scale(0.8);
 

@@ -14,14 +14,14 @@
   }
 
   .row {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     text-align: left;
 
     @media only screen and (max-width: $screen-xl) {
-      flex-direction: column;
       text-align: center;
+      flex-direction: column;
     }
 
     .col {
@@ -35,9 +35,9 @@
         }
 
         .en-title {
-          margin-bottom: 0.5rem;
           font-size: 30px;
           color: $dark-red;
+          margin-bottom: 0.5rem;
 
           @media only screen and (max-width: $screen-xl) {
             margin-top: 2rem;
@@ -45,8 +45,8 @@
         }
 
         .sub-title {
-          margin-bottom: 2rem;
           padding-bottom: 2rem;
+          margin-bottom: 2rem;
           border-bottom: 1px solid $black;
 
           @media only screen and (max-width: $screen-xl) {
@@ -85,8 +85,8 @@
       text-align: right;
 
       @media only screen and (max-width: $screen-xl) {
-        flex-direction: column-reverse;
         text-align: center;
+        flex-direction: column-reverse;
       }
 
       img {
@@ -112,7 +112,7 @@
   margin: 4% auto 10%;
 
   img {
-    max-width: 705px;
     width: calc(#{100% * 705px / $screen-psm});
+    max-width: 705px;
   }
 }

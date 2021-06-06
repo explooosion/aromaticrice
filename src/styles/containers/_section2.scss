@@ -11,31 +11,31 @@
     margin: 0 auto;
     width: 100%;
     height: 815px;
-    background-image: url("@/images/Key Visual_banner.png");
-    background-size: 1944px 815px;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1944px 815px;
+    background-image: url("@/images/Key Visual_banner.png");
 
     @media only screen and (max-width: $screen-xl) {
       height: 1433px;
-      background-image: url("@/images/Key Visual_banner_mobile.png");
       background-size: $screen-xl 100%;
+      background-image: url("@/images/Key Visual_banner_mobile.png");
     }
 
     &::after {
       content: "";
       position: absolute;
       bottom: -15px;
-      left: 0;
       right: 0;
+      left: 0;
       margin: 0 auto;
       width: 100%;
       height: 20px;
-      background-image: url("@/images/Background_Shadow.png");
-      background-size: 1917px 20px;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: 1917px 20px;
       z-index: -1;
+      background-image: url("@/images/Background_Shadow.png");
 
       @media only screen and (max-width: $screen-xl) {
         display: none;
@@ -50,8 +50,8 @@
 
     @media only screen and (max-width: $screen-xl) {
       top: 60%;
-      left: 0;
       right: 0;
+      left: 0;
       margin: 0 auto;
       text-align: center;
     }
@@ -88,15 +88,15 @@
       left: 50%;
       width: 412px;
       height: 520px;
-      background-image: url("@/images/Visual_02.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("@/images/Visual_02.png");
 
       @media only screen and (max-width: $screen-xl) {
         top: 45%;
-        left: 0;
         right: 0;
+        left: 0;
         margin: 0 auto;
       }
 
@@ -114,15 +114,15 @@
       right: 40%;
       width: 412px;
       height: 520px;
-      background-image: url("@/images/Visual_01.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("@/images/Visual_01.png");
 
       @media only screen and (max-width: $screen-xl) {
         top: -5%;
-        left: 0;
         right: 0;
+        left: 0;
         margin: 0 auto;
       }
 
@@ -157,10 +157,10 @@
         left: -50px;
         width: 40px;
         height: 40px;
-        background-image: url("@/images/list-icon.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url("@/images/list-icon.png");
       }
     }
 
@@ -171,8 +171,8 @@
 
       @media only screen and (max-width: $screen-xl) {
         top: 360px;
-        left: 0;
         right: 0;
+        left: 0;
         margin: 0 auto;
       }
     }
@@ -184,8 +184,8 @@
 
       @media only screen and (max-width: $screen-xl) {
         top: 1450px;
-        left: 0;
         right: 0;
+        left: 0;
         margin: 0 auto;
       }
 
