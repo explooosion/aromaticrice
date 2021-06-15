@@ -27,7 +27,11 @@ document.querySelectorAll('.nav-item').forEach((nav) => {
   });
 });
 
-document.querySelectorAll('img').forEach(img => img.addEventListener('contextmenu', e => e.preventDefault()));
+document.querySelectorAll('img')
+  .forEach(img => img.addEventListener('contextmenu', e => e.preventDefault()));
+
+document.querySelectorAll('.link-px')
+  .forEach(link => link.addEventListener('click', () => window.open('http://www.pxmart.com.tw/', '_blank')));
 
 const slide3 = tns({
   container: '.section3-slider',

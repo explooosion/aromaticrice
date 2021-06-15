@@ -139,10 +139,8 @@
     position: fixed;
     top: 30%;
     right: 0;
-    // TODO: 暫時隱藏
-    display: none;
+    display: block;
     width: calc(#{100% * 146px / $screen-psm});
-    // display: block;
     max-width: 146px;
     text-decoration: none;
     z-index: 1;
