@@ -2,10 +2,10 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 994px;
+  height: 933px;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: 1800px 994px;
+  background-size: 1700px 933px;
   background-image: url("@/images/Key Visual.png");
 
   @media only screen and (max-width: $screen-xl) {
@@ -41,7 +41,7 @@
     left: 0;
     margin: 0 auto;
     // width: 176px;
-    width: 276px;
+    width: 250px;
 
     @media only screen and (max-width: $screen-xl) {
       top: 100px;
