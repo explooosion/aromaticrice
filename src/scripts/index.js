@@ -4,7 +4,6 @@ if (process.env.NODE_ENV === 'development') {
   require('../index.html');
 }
 
-
 const gopTop = document.getElementById('gotop');
 
 gopTop.addEventListener('click', () => {
