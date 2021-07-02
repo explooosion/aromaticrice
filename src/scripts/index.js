@@ -31,7 +31,7 @@ document.querySelectorAll('img')
   .forEach(img => img.addEventListener('contextmenu', e => e.preventDefault()));
 
 document.querySelectorAll('.link-px')
-  .forEach(link => link.addEventListener('click', () => window.open('http://www.pxmart.com.tw/', '_blank')));
+  .forEach(link => link.addEventListener('click', () => window.open('https://shop.pxmart.com.tw/SalePage/Index/390513', '_blank')));
 
 const slide3 = tns({
   container: '.section3-slider',
